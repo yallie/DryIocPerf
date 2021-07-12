@@ -40,7 +40,6 @@ namespace DryIoc4Perf
 
 			// adaptor
 			var container = new ContainerAdapter(dry);
-			ServerCall.RootContainer = container;
 
 			// register builtin services
 			container.RegisterExports(Services.Assembly);
