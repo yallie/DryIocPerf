@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DryIoc4Perf", "DryIoc4Perf\DryIoc4Perf.csproj", "{4EE82AA0-F621-41BB-9D14-D73444D3E60B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DryIoc2Perf", "DryIoc2Perf\DryIoc2Perf.csproj", "{483F2BE6-20FE-499F-BF01-37077E5CE2C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared code", "Shared code", "{97831C6D-7692-4C48-A158-0C18492EC622}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\Benchmark.cs = Shared\Benchmark.cs
+		Shared\ImportHelper.cs = Shared\ImportHelper.cs
+		Shared\ScriptRegistrator.cs = Shared\ScriptRegistrator.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EE82AA0-F621-41BB-9D14-D73444D3E60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE82AA0-F621-41BB-9D14-D73444D3E60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE82AA0-F621-41BB-9D14-D73444D3E60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE82AA0-F621-41BB-9D14-D73444D3E60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483F2BE6-20FE-499F-BF01-37077E5CE2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483F2BE6-20FE-499F-BF01-37077E5CE2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483F2BE6-20FE-499F-BF01-37077E5CE2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483F2BE6-20FE-499F-BF01-37077E5CE2C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F3C9C8E-3743-4B1C-A11F-8D3B20ABD393}
+	EndGlobalSection
+EndGlobal
