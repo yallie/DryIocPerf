@@ -10,10 +10,7 @@ namespace Ultima
 	/// </summary>
 	public class Benchmark
 	{
-		public Benchmark(IMyContainer container)
-		{
-			Container = container;
-		}
+		public Benchmark(IMyContainer container) => Container = container;
 
 		private IMyContainer Container { get; set; }
 

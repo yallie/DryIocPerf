@@ -18,7 +18,13 @@ namespace Ultima
 	/// </summary>
 	internal class ScriptRegistrator
 	{
-		public void ReindexScriptRegistrations(Assembly asm)
+		/// <summary>
+		/// Gets the compiled script assembly and indexes all registrations by service type name.
+		/// The real application deals with many small assemblies, created out of the compiled scripts.
+		/// In the benchmark, all scripts are compiled into one assembly.
+		/// </summary>
+		/// <param name="asm">The assembly to scan and register.</param>
+		public void IndexScriptRegistrations(Assembly asm)
 		{
 			var registrations = AttributedModel
 				.Scan(new[] { asm })

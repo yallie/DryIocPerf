@@ -1,17 +1,11 @@
 using System;
-using System.ComponentModel.Composition;
 using System.Diagnostics;
 using System.Linq;
 using DryIoc;
 using DryIoc.MefAttributedModel;
 using Serilog;
 using Ultima;
-using Ultima.Log;
-using Ultima.Scripting;
 using Ultima.Server;
-using Ultima.Server.Composition;
-using Ultima.Server.SessionMgmt;
-using Ultima.Testing;
 using Ultima.WebServices;
 using IWebService = Ultima.WebServices.IWebService;
 using SampleScript = Ultima.Scripting.WebService;
@@ -25,7 +19,7 @@ namespace DryIoc4Perf
 			// initialize default Serilog logger
 			var logger = Log.Logger = new LoggerConfiguration()
 				.WriteTo.Console()
-				.WriteTo.File("DryIoc2Perf.log")
+				.WriteTo.File("DryIoc3Perf.log")
 				.CreateLogger();
 
 			logger.Information("Starting up...");
@@ -46,8 +40,8 @@ namespace DryIoc4Perf
 
 			// add dynamic registrations
 			var regs = new ScriptRegistrator();
-			regs.ReindexScriptRegistrations(typeof(SampleScript).Assembly);
-			container.WithDynamicRegistrations(regs.GetDynamicRegistrations);
+			regs.IndexScriptRegistrations(typeof(SampleScript).Assembly);
+			container.AddDynamicRegistrations(regs.GetDynamicRegistrations);
 
 			logger.Information("Started.");
 

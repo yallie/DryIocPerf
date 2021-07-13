@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Reflection;
 using DryIoc;
 using DryIoc.MefAttributedModel;
@@ -32,7 +31,7 @@ namespace DryIoc4Perf
 			throw new InvalidOperationException();
 		}
 
-		public void WithDynamicRegistrations(Rules.DynamicRegistrationProvider getDynamicRegistrations)
+		public void AddDynamicRegistrations(Rules.DynamicRegistrationProvider getDynamicRegistrations)
 		{
 			if (Container is IContainer container)
 			{
