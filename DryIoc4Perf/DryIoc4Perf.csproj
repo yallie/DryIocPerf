@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DryIoc.dll" Version="4.8.1" />
     <PackageReference Include="DryIoc.MefAttributedModel.dll" Version="6.1.0" />
   </ItemGroup>
 
