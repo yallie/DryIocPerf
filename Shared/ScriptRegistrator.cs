@@ -105,8 +105,13 @@ namespace Ultima
 			}
 		}
 
+		public List<Tuple<Type, object>> LookupHistory { get; } = new List<Tuple<Type, object>>();
+
+		public List<string> LookupTypes => new HashSet<string>(LookupHistory.Select(h => h.Item1.ToString())).OrderBy(r => r).ToList();
+
 		public IEnumerable<DynamicRegistration> GetDynamicRegistrations(Type serviceType, object serviceKey)
 		{
+			LookupHistory.Add(Tuple.Create(serviceType, serviceKey));
 			if (serviceType == null)
 			{
 				return null;
