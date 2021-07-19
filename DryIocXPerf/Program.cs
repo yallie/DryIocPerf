@@ -10,7 +10,7 @@ using Ultima.WebServices;
 using IWebService = Ultima.WebServices.IWebService;
 using SampleScript = Ultima.Scripting.WebService;
 
-namespace DryIoc4Perf
+namespace DryIocXPerf
 {
 	public class Program
 	{
@@ -19,7 +19,7 @@ namespace DryIoc4Perf
 			// initialize default Serilog logger
 			var logger = Log.Logger = new LoggerConfiguration()
 				.WriteTo.Console()
-				.WriteTo.File("DryIoc4Perf.log")
+				.WriteTo.File("DryIocXPerf.log")
 				.CreateLogger();
 
 			logger.Information("Starting up...");

@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared code", "Shared code"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DryIoc3Perf", "DryIoc3Perf\DryIoc3Perf.csproj", "{7B872C26-28E3-460E-B4A3-1EC61435DF33}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DryIocXPerf", "DryIocXPerf\DryIocXPerf.csproj", "{F44CA771-BE03-4C28-817F-13FEBAAD3E48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{7B872C26-28E3-460E-B4A3-1EC61435DF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B872C26-28E3-460E-B4A3-1EC61435DF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B872C26-28E3-460E-B4A3-1EC61435DF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44CA771-BE03-4C28-817F-13FEBAAD3E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44CA771-BE03-4C28-817F-13FEBAAD3E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44CA771-BE03-4C28-817F-13FEBAAD3E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44CA771-BE03-4C28-817F-13FEBAAD3E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

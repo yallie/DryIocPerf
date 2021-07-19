@@ -109,6 +109,10 @@ namespace Ultima
 
 		public List<string> LookupTypes => new HashSet<string>(LookupHistory.Select(h => h.Item1.ToString())).OrderBy(r => r).ToList();
 
+		public List<string> SucceededLookupHistory { get; } = new List<string>();
+
+		public List<string> SucceededLookupTypes => new HashSet<string>(SucceededLookupHistory).OrderBy(r => r).ToList();
+
 		public IEnumerable<DynamicRegistration> GetDynamicRegistrations(Type serviceType, object serviceKey)
 		{
 			LookupHistory.Add(Tuple.Create(serviceType, serviceKey));
@@ -128,6 +132,8 @@ namespace Ultima
 
 			lock (regs)
 			{
+				SucceededLookupHistory.Add(typeFullName);
+
 				// DryIoc filters by the service key, so we don't bother doing it ourselves
 				return regs.Select(r => r.DynamicRegistration).ToArray();
 			}

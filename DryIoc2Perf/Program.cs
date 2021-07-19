@@ -84,6 +84,8 @@ namespace DryIoc4Perf
 			logger.Information("Time elapsed: {0}", sw.Elapsed);
 			logger.Information("Dynamic lookup count: {0}", regs.LookupHistory.Count);
 			regs.LookupTypes.ForEach(t => Console.WriteLine(t));
+			logger.Information("Succeeded lookup count: {0}", regs.SucceededLookupHistory.Count);
+			regs.SucceededLookupTypes.ForEach(t => Console.WriteLine(t));
 		}
 	}
 }
