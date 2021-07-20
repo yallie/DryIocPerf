@@ -13,6 +13,7 @@
     <Compile Include="..\Shared\Benchmark.cs" Link="Benchmark.cs" />
     <Compile Include="..\Shared\ImportHelper.cs" Link="ImportHelper.cs" />
     <Compile Include="..\Shared\ScriptRegistrator.cs" Link="ScriptRegistrator.cs" />
+    <Compile Include="..\Shared\SharedProgram.cs" Link="SharedProgram.cs" />
   </ItemGroup>
 
   <ItemGroup>

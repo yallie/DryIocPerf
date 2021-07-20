@@ -4,7 +4,7 @@ using DryIoc;
 using DryIoc.MefAttributedModel;
 using Ultima;
 
-namespace DryIoc4Perf
+namespace DryIocPerf
 {
 	public class ContainerAdapter : IMyContainer, IMyResolverContext
 	{

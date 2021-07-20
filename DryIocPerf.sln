@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared code", "Shared code"
 		Shared\Benchmark.cs = Shared\Benchmark.cs
 		Shared\ImportHelper.cs = Shared\ImportHelper.cs
 		Shared\ScriptRegistrator.cs = Shared\ScriptRegistrator.cs
+		Shared\SharedProgram.cs = Shared\SharedProgram.cs
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DryIoc3Perf", "DryIoc3Perf\DryIoc3Perf.csproj", "{7B872C26-28E3-460E-B4A3-1EC61435DF33}"
