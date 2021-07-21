@@ -19,7 +19,7 @@ namespace DryIocPerf
 			// initialize default Serilog logger
 			var logger = Log.Logger = new LoggerConfiguration()
 				.WriteTo.Console()
-				.WriteTo.File("DryIoc2Perf.log")
+				.WriteTo.File("DryIoc3Perf.log")
 				.CreateLogger();
 
 			logger.Information("Starting up...");
